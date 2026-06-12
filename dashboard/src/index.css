@@ -1,0 +1,63 @@
+/* ─── Reset ────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { height: 100%; }
+
+/* ─── Design tokens ─────────────────────────────────────────────────────────── */
+:root {
+  /* Background layers */
+  --bg-base:      #0B1120;
+  --bg-card:      #111827;
+  --bg-card-hover:#151f30;
+  --bg-subtle:    #1a2640;
+  --bg-border:    #1e2d45;
+
+  /* Brand accents */
+  --accent-purple: #6C63FF;
+  --accent-blue:   #00BFFF;
+  --accent-purple-dim: rgba(108, 99, 255, 0.15);
+  --accent-blue-dim:   rgba(0, 191, 255, 0.12);
+
+  /* Severity */
+  --sev-s1:       #EF4444;
+  --sev-s2:       #F97316;
+  --sev-s3:       #86EFAC;
+
+  /* Risk badge */
+  --risk-high:       #dc2626;
+  --risk-high-bg:    rgba(220, 38, 38, 0.12);
+  --risk-watchlist:  #d97706;
+  --risk-watchlist-bg: rgba(217, 119, 6, 0.12);
+  --risk-healthy:    #16a34a;
+  --risk-healthy-bg: rgba(22, 163, 74, 0.12);
+
+  /* Text */
+  --text-primary:   #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted:     #475569;
+
+  /* Typography */
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Spacing */
+  --sidebar-w: 220px;
+  --gap:       20px;
+  --radius:    10px;
+  --radius-sm: 6px;
+}
+
+/* ─── Base ───────────────────────────────────────────────────────────────────── */
+body {
+  font-family: var(--font-body);
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-base); }
+::-webkit-scrollbar-thumb { background: var(--bg-border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
