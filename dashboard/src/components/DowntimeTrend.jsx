@@ -58,7 +58,7 @@ const s = {
     color:          "var(--text-muted)",
     fontSize:       "13px",
   },
-  chartWrap: { flex: 1, minHeight: 0 },
+  chartWrap: { flex: 1, minHeight: 0, height: "220px" },
 };
 
 // ─── Custom tooltip ───────────────────────────────────────────────────────────

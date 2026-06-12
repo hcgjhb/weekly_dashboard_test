@@ -31,7 +31,7 @@ const s = {
     color:         "var(--text-secondary)",
     marginBottom:  "16px",
   },
-  chartWrap: { flex: 1, minHeight: 0 },
+  chartWrap: { flex: 1, minHeight: 0, height: "220px" },
 };
 
 const CustomTooltip = ({ active, payload, label }) => {
