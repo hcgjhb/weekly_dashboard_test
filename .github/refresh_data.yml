@@ -1,0 +1,94 @@
+name: Weekly Data Refresh
+
+on:
+  # ── Automatic: every Monday at 6:00 AM IST (00:30 UTC) ──────────────────────
+  schedule:
+    - cron: "30 0 * * 1"
+
+  # ── Manual trigger from GitHub Actions UI ───────────────────────────────────
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    name: Refresh Dashboard Data
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # ── 1. Checkout repo ─────────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── 2. Set up Python ─────────────────────────────────────────────────────
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      # ── 3. Install Python dependencies ───────────────────────────────────────
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install pandas openpyxl numpy rapidfuzz
+
+      # ── 4. Standardize: Excel → parsed_data.csv ──────────────────────────────
+      #    Reads etl/raw_data.xlsx — just replace/overwrite this file each week
+      - name: Run standardization
+        run: |
+          python etl/standardization.py \
+            --input  etl/raw_data.xlsx \
+            --output etl/parsed_data.csv
+
+      # ── 5. Generate JSONs: parsed_data.csv → data/*.json ─────────────────────
+      - name: Generate dashboard JSONs
+        run: |
+          python etl/generate_json.py \
+            --input      etl/parsed_data.csv \
+            --output-dir data
+
+      # ── 6. Copy data/ into dashboard/public/data/ for React build ────────────
+      - name: Copy data to React public folder
+        run: |
+          mkdir -p dashboard/public/data
+          cp data/*.json dashboard/public/data/
+
+      # ── 7. Commit updated JSONs back to repo ─────────────────────────────────
+      #    Only commits if files actually changed (no empty commits)
+      - name: Commit updated data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/*.json
+          git diff --cached --quiet || git commit -m "chore: refresh dashboard data [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git push
+
+      # ── 8. Set up Node for React build ───────────────────────────────────────
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: dashboard/package-lock.json
+
+      # ── 9. Install npm dependencies ──────────────────────────────────────────
+      - name: Install npm dependencies
+        working-directory: dashboard
+        run: npm ci
+
+      # ── 10. Build React app ───────────────────────────────────────────────────
+      - name: Build React dashboard
+        working-directory: dashboard
+        run: npm run build
+        env:
+          CI: false           # prevents warnings from failing the build
+
+      # ── 11. Deploy to GitHub Pages ────────────────────────────────────────────
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir:  dashboard/build
+          commit_message: "deploy: dashboard refresh [$(date -u '+%Y-%m-%d %H:%M UTC')]"
