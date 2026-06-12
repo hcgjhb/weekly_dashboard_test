@@ -1,0 +1,6 @@
+{
+  "total_outages": 50,
+  "avg_mttr": 105.5,
+  "customers_impacted": 44,
+  "total_downtime_mins": 5275.0
+}

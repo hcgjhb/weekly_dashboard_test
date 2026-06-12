@@ -1,0 +1,37 @@
+[
+  {
+    "fault_type": "Fiber",
+    "count": 36,
+    "pct": 72.0
+  },
+  {
+    "fault_type": "Hardware",
+    "count": 4,
+    "pct": 8.0
+  },
+  {
+    "fault_type": "Fiber + Config Issue",
+    "count": 4,
+    "pct": 8.0
+  },
+  {
+    "fault_type": "Supplier",
+    "count": 2,
+    "pct": 4.0
+  },
+  {
+    "fault_type": "Human Error",
+    "count": 2,
+    "pct": 4.0
+  },
+  {
+    "fault_type": "Fiber + Hardware",
+    "count": 1,
+    "pct": 2.0
+  },
+  {
+    "fault_type": "Infra Hygiene",
+    "count": 1,
+    "pct": 2.0
+  }
+]

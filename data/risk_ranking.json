@@ -1,0 +1,202 @@
+[
+  {
+    "customer": "['Microsoft']",
+    "outages": 9,
+    "downtime_hrs": 37.8,
+    "avg_mttr_min": 251.9,
+    "risk_score": 0.945,
+    "risk_level": "High"
+  },
+  {
+    "customer": "['Meta']",
+    "outages": 4,
+    "downtime_hrs": 26.6,
+    "avg_mttr_min": 398.8,
+    "risk_score": 0.614,
+    "risk_level": "Watchlist"
+  },
+  {
+    "customer": "['Colt']",
+    "outages": 4,
+    "downtime_hrs": 0.1,
+    "avg_mttr_min": 2.2,
+    "risk_score": 0.222,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['Riot Games', 'TCL']",
+    "outages": 1,
+    "downtime_hrs": 5.4,
+    "avg_mttr_min": 323.0,
+    "risk_score": 0.209,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['Amazon']",
+    "outages": 2,
+    "downtime_hrs": 3.2,
+    "avg_mttr_min": 96.0,
+    "risk_score": 0.193,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['Sify']",
+    "outages": 3,
+    "downtime_hrs": 0.2,
+    "avg_mttr_min": 4.3,
+    "risk_score": 0.169,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['Google', 'Netmagic']",
+    "outages": 1,
+    "downtime_hrs": 3.5,
+    "avg_mttr_min": 209.0,
+    "risk_score": 0.161,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['Google']",
+    "outages": 2,
+    "downtime_hrs": 2.2,
+    "avg_mttr_min": 67.0,
+    "risk_score": 0.153,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['Airtel']",
+    "outages": 2,
+    "downtime_hrs": 2.2,
+    "avg_mttr_min": 66.0,
+    "risk_score": 0.131,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['PhonePe']",
+    "outages": 2,
+    "downtime_hrs": 0.9,
+    "avg_mttr_min": 26.0,
+    "risk_score": 0.127,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['NTT']",
+    "outages": 2,
+    "downtime_hrs": 1.7,
+    "avg_mttr_min": 51.5,
+    "risk_score": 0.122,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['Riot Games']",
+    "outages": 2,
+    "downtime_hrs": 1.4,
+    "avg_mttr_min": 41.5,
+    "risk_score": 0.115,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['Microsoft', 'PhonePe']",
+    "outages": 2,
+    "downtime_hrs": 0.1,
+    "avg_mttr_min": 4.5,
+    "risk_score": 0.113,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['Apple', 'Cloudflare', 'Google', 'Microsoft', 'NTT', 'PhonePe', 'Sify', 'Telstra', 'Verizon']",
+    "outages": 2,
+    "downtime_hrs": 0.1,
+    "avg_mttr_min": 2.5,
+    "risk_score": 0.112,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['Akamai', 'Cloudflare', 'IDFC', 'NTT', 'Netflix', 'PhonePe', 'Sify', 'Telstra', 'Verizon', 'Wells Fargo']",
+    "outages": 2,
+    "downtime_hrs": 0.1,
+    "avg_mttr_min": 2.0,
+    "risk_score": 0.111,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['PhonePe', 'Sify']",
+    "outages": 1,
+    "downtime_hrs": 1.0,
+    "avg_mttr_min": 61.0,
+    "risk_score": 0.097,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['Amazon', 'Cloudflare', 'Oracle']",
+    "outages": 1,
+    "downtime_hrs": 0.5,
+    "avg_mttr_min": 30.0,
+    "risk_score": 0.081,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['Amazon', 'Amazon LEO', 'Meta', 'Riot Games', 'Vodafone']",
+    "outages": 1,
+    "downtime_hrs": 0.2,
+    "avg_mttr_min": 12.0,
+    "risk_score": 0.072,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['Amazon', 'Oracle', 'Vodafone']",
+    "outages": 1,
+    "downtime_hrs": 0.2,
+    "avg_mttr_min": 11.0,
+    "risk_score": 0.061,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['Amazon', 'Cloudflare', 'Oracle', 'Riot Games', 'Vodafone']",
+    "outages": 1,
+    "downtime_hrs": 0.2,
+    "avg_mttr_min": 10.0,
+    "risk_score": 0.06,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['Airtel', 'Google', 'NVIDIA']",
+    "outages": 1,
+    "downtime_hrs": 0.1,
+    "avg_mttr_min": 6.0,
+    "risk_score": 0.058,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['Jump Traders']",
+    "outages": 1,
+    "downtime_hrs": 0.1,
+    "avg_mttr_min": 6.0,
+    "risk_score": 0.058,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['Wells Fargo']",
+    "outages": 1,
+    "downtime_hrs": 0.1,
+    "avg_mttr_min": 5.0,
+    "risk_score": 0.058,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['Amazon', 'Microsoft']",
+    "outages": 1,
+    "downtime_hrs": 0.1,
+    "avg_mttr_min": 3.0,
+    "risk_score": 0.057,
+    "risk_level": "Healthy"
+  },
+  {
+    "customer": "['Akamai', 'Colt', 'Google', 'IDFC', 'Wells Fargo']",
+    "outages": 1,
+    "downtime_hrs": 0.0,
+    "avg_mttr_min": 1.0,
+    "risk_score": 0.056,
+    "risk_level": "Healthy"
+  }
+]
