@@ -1,0 +1,23 @@
+[
+  {
+    "severity": "S1",
+    "label": "S1 Critical",
+    "count": 15,
+    "pct": 30.0,
+    "color": "#EF4444"
+  },
+  {
+    "severity": "S2",
+    "label": "S2 Major",
+    "count": 26,
+    "pct": 52.0,
+    "color": "#F97316"
+  },
+  {
+    "severity": "S3",
+    "label": "S3 Minor",
+    "count": 9,
+    "pct": 18.0,
+    "color": "#86EFAC"
+  }
+]

@@ -1,0 +1,216 @@
+[
+  {
+    "week_start": "2025-06-02",
+    "week_end": "2025-06-08",
+    "week_label": "Jun 02 – Jun 08, 2025",
+    "is_latest": false,
+    "days": [
+      {
+        "date": "2025-06-02",
+        "label": "02 Jun",
+        "downtime_mins": 1.0,
+        "outages": 1
+      }
+    ]
+  },
+  {
+    "week_start": "2025-12-29",
+    "week_end": "2026-01-04",
+    "week_label": "Dec 29 – Jan 04, 2026",
+    "is_latest": false,
+    "days": [
+      {
+        "date": "2026-01-01",
+        "label": "01 Jan",
+        "downtime_mins": 4.0,
+        "outages": 1
+      },
+      {
+        "date": "2026-01-04",
+        "label": "04 Jan",
+        "downtime_mins": 5.0,
+        "outages": 1
+      }
+    ]
+  },
+  {
+    "week_start": "2026-01-05",
+    "week_end": "2026-01-11",
+    "week_label": "Jan 05 – Jan 11, 2026",
+    "is_latest": false,
+    "days": [
+      {
+        "date": "2026-01-05",
+        "label": "05 Jan",
+        "downtime_mins": 61.0,
+        "outages": 4
+      }
+    ]
+  },
+  {
+    "week_start": "2026-01-26",
+    "week_end": "2026-02-01",
+    "week_label": "Jan 26 – Feb 01, 2026",
+    "is_latest": false,
+    "days": [
+      {
+        "date": "2026-02-01",
+        "label": "01 Feb",
+        "downtime_mins": 219.0,
+        "outages": 2
+      }
+    ]
+  },
+  {
+    "week_start": "2026-02-02",
+    "week_end": "2026-02-08",
+    "week_label": "Feb 02 – Feb 08, 2026",
+    "is_latest": false,
+    "days": [
+      {
+        "date": "2026-02-04",
+        "label": "04 Feb",
+        "downtime_mins": 150.0,
+        "outages": 1
+      },
+      {
+        "date": "2026-02-05",
+        "label": "05 Feb",
+        "downtime_mins": 14.0,
+        "outages": 4
+      }
+    ]
+  },
+  {
+    "week_start": "2026-02-23",
+    "week_end": "2026-03-01",
+    "week_label": "Feb 23 – Mar 01, 2026",
+    "is_latest": false,
+    "days": [
+      {
+        "date": "2026-03-01",
+        "label": "01 Mar",
+        "downtime_mins": 52.0,
+        "outages": 1
+      }
+    ]
+  },
+  {
+    "week_start": "2026-03-02",
+    "week_end": "2026-03-08",
+    "week_label": "Mar 02 – Mar 08, 2026",
+    "is_latest": false,
+    "days": [
+      {
+        "date": "2026-03-02",
+        "label": "02 Mar",
+        "downtime_mins": 323.0,
+        "outages": 1
+      },
+      {
+        "date": "2026-03-05",
+        "label": "05 Mar",
+        "downtime_mins": 1381.0,
+        "outages": 7
+      }
+    ]
+  },
+  {
+    "week_start": "2026-03-30",
+    "week_end": "2026-04-05",
+    "week_label": "Mar 30 – Apr 05, 2026",
+    "is_latest": false,
+    "days": [
+      {
+        "date": "2026-04-02",
+        "label": "02 Apr",
+        "downtime_mins": 64.0,
+        "outages": 1
+      },
+      {
+        "date": "2026-04-03",
+        "label": "03 Apr",
+        "downtime_mins": 2.0,
+        "outages": 1
+      },
+      {
+        "date": "2026-04-05",
+        "label": "05 Apr",
+        "downtime_mins": 82.0,
+        "outages": 6
+      }
+    ]
+  },
+  {
+    "week_start": "2026-04-27",
+    "week_end": "2026-05-03",
+    "week_label": "Apr 27 – May 03, 2026",
+    "is_latest": false,
+    "days": [
+      {
+        "date": "2026-05-02",
+        "label": "02 May",
+        "downtime_mins": 31.0,
+        "outages": 1
+      },
+      {
+        "date": "2026-05-03",
+        "label": "03 May",
+        "downtime_mins": 2048.0,
+        "outages": 4
+      }
+    ]
+  },
+  {
+    "week_start": "2026-05-04",
+    "week_end": "2026-05-10",
+    "week_label": "May 04 – May 10, 2026",
+    "is_latest": false,
+    "days": [
+      {
+        "date": "2026-05-04",
+        "label": "04 May",
+        "downtime_mins": 150.0,
+        "outages": 1
+      },
+      {
+        "date": "2026-05-05",
+        "label": "05 May",
+        "downtime_mins": 523.0,
+        "outages": 3
+      }
+    ]
+  },
+  {
+    "week_start": "2026-06-01",
+    "week_end": "2026-06-07",
+    "week_label": "Jun 01 – Jun 07, 2026",
+    "is_latest": true,
+    "days": [
+      {
+        "date": "2026-06-01",
+        "label": "01 Jun",
+        "downtime_mins": 0.0,
+        "outages": 1
+      },
+      {
+        "date": "2026-06-02",
+        "label": "02 Jun",
+        "downtime_mins": 11.0,
+        "outages": 1
+      },
+      {
+        "date": "2026-06-03",
+        "label": "03 Jun",
+        "downtime_mins": 9.0,
+        "outages": 5
+      },
+      {
+        "date": "2026-06-04",
+        "label": "04 Jun",
+        "downtime_mins": 145.0,
+        "outages": 3
+      }
+    ]
+  }
+]
