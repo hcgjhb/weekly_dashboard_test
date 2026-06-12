@@ -70,13 +70,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: npm
-          cache-dependency-path: dashboard/package-lock.json
 
       # ── 9. Install npm dependencies ──────────────────────────────────────────
       - name: Install npm dependencies
         working-directory: dashboard
-        run: npm ci
+        run: npm install
 
       # ── 10. Build React app ───────────────────────────────────────────────────
       - name: Build React dashboard
